@@ -1,0 +1,85 @@
+/* RESET - Start */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*RESET - stop*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: hsl(234, 12%, 34%);
+  background-color: hsl(0, 0%, 100%);
+  padding: clamp(2rem, -0.863rem + 12.214vw, 5rem); /* min: 32px, max: 80px */
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+  line-height: 1.4;
+}
+
+.products__header {
+  text-align: center;
+}
+
+.products__title {
+  font-size: clamp(1.5rem, 0.784rem + 3.053vw, 2.25rem); /* min: 24px, max: 36px */
+  font-weight: 200;
+  margin-block-end: 1rem;
+}
+
+.products__description {
+  font-size: 0.9375rem;
+}
+
+.products__tools {
+  display: grid;
+  gap: 2rem;
+}
+
+.products__tool {
+  inline-size: 100%;
+  block-size: 15.625rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+.u-font-weight-bold {
+  font-weight: 600;
+}
