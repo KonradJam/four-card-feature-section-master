@@ -7,7 +7,7 @@ body {
     align-items: center;
     font-family: $font-family;
     color: $color-grey-500;
-    background-color: $color-white;
+    background-color: $color-dim-white;
     padding: clamp($spacing-l, calc(-0.863rem + 12.214vw), $spacing-xxxl); /* min: 32px, max: 80px */
 }
 
@@ -27,6 +27,10 @@ body {
         font-size: clamp($font-size-xl, calc(0.784rem + 3.053vw), $font-size-xxl); /* min: 24px, max: 36px */
         font-weight: $font-weight-light; 
         margin-block-end: $spacing-s;
+    }
+
+    &__title > span {
+        display: inline-block;
     }
 
     &__description {

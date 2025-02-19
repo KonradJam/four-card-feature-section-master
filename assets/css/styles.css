@@ -41,7 +41,7 @@ body {
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: hsl(234, 12%, 34%);
-  background-color: hsl(0, 0%, 100%);
+  background-color: #FAFAFA;
   padding: clamp(2rem, -0.863rem + 12.214vw, 5rem); /* min: 32px, max: 80px */
 }
 
@@ -60,6 +60,9 @@ body {
   font-size: clamp(1.5rem, 0.784rem + 3.053vw, 2.25rem); /* min: 24px, max: 36px */
   font-weight: 200;
   margin-block-end: 1rem;
+}
+.products__title > span {
+  display: inline-block;
 }
 .products__description {
   font-size: 0.9375rem;
