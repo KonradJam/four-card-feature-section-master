@@ -19,7 +19,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-Live Site URL: [GitHub Pages](https://https://konradjam.github.io/four-card-feature-section-master/)
+Live Site URL: [GitHub Pages](https://konradjam.github.io/four-card-feature-section-master/)
 
 ## My process
 
