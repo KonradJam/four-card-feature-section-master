@@ -39,7 +39,7 @@ body {
 
     &__tools {
         display: grid;
-        row-gap: $spacing-xl;
+        row-gap: $spacing-l;
     }
 
     &__tool {
@@ -47,7 +47,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         inline-size: 100%;
-        block-size: 15.625rem;
+        min-block-size: $card-min-block-size;
         padding: $spacing-l;
         border-top: solid 4px transparent;
         border-radius: 8px;
@@ -68,6 +68,7 @@ body {
 
     &__icon {
         margin-inline: auto 0;
+        margin-block-start: $spacing-s;
     }
 }
 
@@ -88,6 +89,7 @@ body {
         &__tool:nth-child(2) {
             grid-column: 1 / span 2;
             inline-size: calc(100% - #{$spacing-s});
+            justify-self: start;
         }
 
         &__tool:nth-child(3) {
@@ -116,12 +118,13 @@ body {
 
         &__tool:nth-child(2) {
             grid-row: 1 / span 2;
-            block-size: calc(100% - #{$spacing-s});
+            min-block-size: calc($card-min-block-size - #{$spacing-s});
+            align-self: self-start;
         }
 
         &__tool:nth-child(3) {
             grid-row: 3 / span 2;
-            block-size: calc(100% - #{$spacing-s});
+            min-block-size: calc($card-min-block-size - #{$spacing-s});
             align-self: self-end;
         }
     }
